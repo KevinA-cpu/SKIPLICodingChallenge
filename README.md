@@ -6,7 +6,13 @@ I tried every possible way to try and use Twilio but there are some issues with 
 
 ## Backend
 
-Before running the backend, make sure to fill in the following environment variables in a `.env` file:
+From the root folder, navigate to the `backend` directory by running the following command:
+
+```bash
+cd backend
+```
+
+Before running the backend, make sure to fill in the following environment variables in a `.env` file, following the '.env.template' file as a guide:
 
 ```
 
@@ -27,16 +33,22 @@ PORT=your_port
 
 ```
 
-To run the backend, navigate to the `backend` directory and run the following commands:
+To run the backend run the following commands:
 
 ```bash
 npm install
-npm start
+npm run start
 ```
 
 ## Frontend
 
-Before running the frontend, make sure to fill in the following environment variables in a `.env` file:
+From the root folder, navigate to the `frontend` directory by running the following command:
+
+```bash
+cd frontend
+```
+
+Before running the frontend, make sure to fill in the following environment variables in a `.env` file, following the '.env.template' file as a guide:
 
 ```
 SERVER_URL=your_server_url
@@ -46,5 +58,5 @@ To run the frontend, navigate to the `frontend` directory and run the following 
 
 ```bash
 npm install
-npm start
+npm run start
 ```
