@@ -1,46 +1,50 @@
-# Getting Started with Create React App
+# SKIPLI Coding Challenge
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project consists of a backend and a frontend. The backend is responsible for handling requests and interacting with various services such as Google Email Service, Firebase for storing data, and Gemini for generating captions and ideas base on various texts. The frontend is a React application using Chakra UI for styling.
 
-## Available Scripts
+I tried every possible way to try and use Twilio but there are some issues with it when trying to send a message to a verified phone number. Tried to add a new number, no verification code sent to my phone. There was no way to create a ticket as well. Time is money so I have decided to fallback to using Google Email Service.
 
-In the project directory, you can run:
+## Backend
 
-### `npm start`
+Before running the backend, make sure to fill in the following environment variables in a `.env` file:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+MAIL_USERNAME=your_username
+MAIL_PASSWORD=your_password
+OAUTH_CLIENT_ID=your_oauth_client_id
+OAUTH_CLIENT_SECRET=your_oauth_client_secret
+OAUTH_REFRESH_TOKEN=your_oauth_refresh_token
+FIREBASE_API_KEY=your_firebase_api_key
+FIREBASE_AUTH_DOMAIN=your_firebase_auth_domain
+FIREBASE_PROJECT_ID=your_firebase_project_id
+FIREBASE_STORAGE_BUCKET=your_firebase_storage_bucket
+FIREBASE_MESSAGING_SENDER_ID=your_firebase_messaging_sender_id
+FIREBASE_APP_ID=your_firebase_app_id
+FIREBASE_MEASUREMENT_ID=your_firebase_measurement_id
+GEMINI_API_KEY=your_gemini_api_key
+PORT=your_port
 
-### `npm test`
+```
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+To run the backend, navigate to the `backend` directory and run the following commands:
 
-### `npm run build`
+```bash
+npm install
+npm start
+```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Frontend
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Before running the frontend, make sure to fill in the following environment variables in a `.env` file:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```
+SERVER_URL=your_server_url
+```
 
-### `npm run eject`
+To run the frontend, navigate to the `frontend` directory and run the following commands:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
-
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```bash
+npm install
+npm start
+```
