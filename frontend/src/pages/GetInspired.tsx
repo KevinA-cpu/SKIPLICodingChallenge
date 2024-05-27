@@ -148,6 +148,10 @@ const GetInspired = (props: IGetInspiredProps) => {
           <Heading size="md" marginTop={4}>
             Generated ideas
           </Heading>
+          <Text>
+            If the results are a little bit weird, try generate again a few
+            times.
+          </Text>
 
           {!fetching &&
             ideas.map((idea: string, index: number) => (
@@ -200,6 +204,13 @@ const GetInspired = (props: IGetInspiredProps) => {
               Generate Captions
             </Button>
           </form>
+          <Heading size="md" marginTop={4}>
+            Generated captions
+          </Heading>
+          <Text>
+            If the results are a little bit weird, try generate again a few
+            times.
+          </Text>
           {!fetching &&
             captions.map((caption: string, index: number) => (
               <CaptionCard

@@ -155,6 +155,9 @@ const StartFromScratch = (props: IStartFromScratchProps) => {
       <Heading size="md" marginTop={4}>
         Generated captions
       </Heading>
+      <Text>
+        If the results are a little bit weird, try generate again a few times.
+      </Text>
       {fetchingCaptions && <Progress size="xs" isIndeterminate marginTop={2} />}
       {!fetchingCaptions &&
         captions.map((caption: string, index: number) => (
