@@ -1,5 +1,7 @@
 # SKIPLI Coding Challenge
 
+The project use Node v20.10.0 with built-in support for dotenv. Ensure that you have the correct version of Node installed on your machine before running the project.
+
 This project consists of a backend and a frontend. The backend is responsible for handling requests and interacting with various services such as Google Email Service, Firebase for storing data, and Gemini for generating captions and ideas base on various texts. The frontend is a React application using Chakra UI for styling.
 
 I tried every possible way to try and use Twilio but there are some issues with it when trying to send a message to a verified phone number. Tried to add a new number, no verification code sent to my phone. There was no way to create a ticket as well. Time is money so I have decided to fallback to using Google Email Service.
